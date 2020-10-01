@@ -26,6 +26,30 @@ Toulouser Allee 19a, 40211 Düsseldorf.
 
 Ein ordentlicher Austausch im Rahmen von den [Fair-Use-Bedingungen](../../for-posoperators/market-de-fair-use-policy.md) muss über die Plattform eingemeldet werden. Die Rücksendung der nicht mehr genutzten TSE muss entsprechend der Anweisungen der Plattform gehandhabt werden. Langt die Rücksendung der nicht mehr genutzten TSE nicht innerhalb von 14 Tagen beim fiskaltrust ein, wird für die zur Verfügung gestellte Hardware-TSE der reguläre Shop-Preis berechnet. 
 
+## Cloud TSE-as-a-Service
+
+### Verfügbarkeit 
+
+Die Verfügbarkeit der Cloud-TSE ist entsprechend der Herstellerangaben:
+
+| Qualitätskriterium          | Regelung                                                     |
+| --------------------------- | ------------------------------------------------------------ |
+| Ausfall:                    | FISKALY SIGN gilt für eine Minute als ausgefallen, wenn für mehr als 10% der in dieser Minute an der API eintreffenden Anfragen aller Nutzer von FISKALY SIGN ein Fehlercode (result code 5xx) resultiert, ausgenommen |
+| Ausfallzeit:                | ist die Anzahl aller Minuten des Durchrechnungszeitraums, in denen eine Ausfall von FISKALY SIGN vorgelegen hat |
+| Wartungszeit                | ist die Anzahl aller Minuten des Durchrechnungszeitraums, während derer eine angekündigte Wartung durchgeführt wird |
+| Gesamtzeit                  | ist Anzahl aller Minuten des Durchrechnungszeitraums abzüglich der Wartungszeit |
+| Verfügbarkeit:              | ist berechnet nach der Formel <br />Verfügbarkeit = (Gesamtzeit – Ausfallzeit) / Gesamtzeit |
+| Vorwarnzeit für Wartungen:  | 3 Arbeitstage                                                |
+| Zugesicherte Verfügbarkeit: | bis zu dem in der NICHTBEANSTANDUNGSREGELUNG genannten Datum 99,6% pro Monat, danach 99,95% pro Jahr |
+
+Wenn Betriebseigenschaften und Laufzeitumgebungseigenschaften entsprechend den Zertifizierungsangaben erfüllt sind, wird fiskaltrust die Entstörung der Cloud-TSE mit dem Hersteller koordinieren. 
+
+### Störungsmeldungen
+
+fiskaltrust leitet jene Störungsmeldungen von Kassenbetreiber an den verbunden Kassenhändler weiter, bei welchen der Kassenhändler die Möglichkeit hat bzw. es ihm zumutbar ist diese zu beheben. 
+
+Details bezüglich der Störungsbehebung der Cloud TSE sind im SLA für Kassenhändler enthalten.
+
 ## Weiterführende Informationen
 
 [Fair Use Policy](../../for-posoperators/market-de-fair-use-policy.md)
